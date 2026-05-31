@@ -120,7 +120,7 @@ export default function Login() {
           <button className="link-button">
             Esqueci minha senha
           </button>
-
+</div>
 
         <button className="btn-primary" onClick={handleLogin} disabled={loading}>
           {loading ? "Entrando..." : "Entrar"}
