@@ -1,0 +1,310 @@
+.login-container {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 32px;
+  border-radius: 12px;
+  color: #fff;
+  width: 320px;          /* melhor proporção */
+  max-width: 90%;
+}
+
+.login-content a {
+  color: #8b5cf6;          /* cor padrão do link */
+  text-decoration: none;  /* remove sublinhado */
+  font-size: 12px;
+}
+
+.login-content a:hover {
+  color: #a78bfa;          /* cor ao passar o mouse */
+  text-decoration: underline;
+}
+
+.login-top-image {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.login-content input {
+  width: 100%;
+  height: 42px;               /* 🔒 altura única */
+  padding: 10px 12px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+
+  color: #fff;
+  outline: none;
+}
+
+.input-field {
+  width: 100%;
+  height: 42px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+
+  color: #fff;
+  outline: none;
+}
+
+.login-content input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+
+  font-size: 30px;   /* ✅ correto */
+  line-height: 1.2;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: #ffffff48;  /* cor do check */
+  width: 16px;
+  height: 16px;
+}
+
+.remember-me input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"]:checked {
+  background: #ffffff;
+}
+
+.remember-me span {
+  margin-left: 6px;
+  margin-bottom: 10px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.password-field input {
+  width: 100%;
+  height: 42px;          /* 🔑 define altura fixa */
+  padding: 10px 40px 10px 12px;  
+  box-sizing: border-box;
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+
+.eye-icon:hover {
+  opacity: 1;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+
+  background: linear-gradient(135deg, #2563eb, #6c19fc);
+  border: none;
+  border-radius: 12px;
+
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+}
+
+/* ✅ BOTÕES GOOGLE / APPLE */
+.social-login {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+
+.social-login button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+
+  width: 150px;        /* aumenta o botão */
+  height: 42px;       /* aumenta o botão */
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.social-login button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-login img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.social-register {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-register button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.social-register img {
+  width: 18px;
+  height: 18px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.error {
+  color: #f87171;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.6); /* 🔥 efeito escurecido */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+
+  z-index: 1000; /* 🔥 garante que fica acima de tudo */
+}
+
+.modal-content {
+  background: rgba(31, 41, 55, 0.95); /* cinza escuro moderno */
+  backdrop-filter: blur(6px);        /* 🔥 efeito vidro (opcional, bonito) */
+
+  padding: 24px;
+  border-radius: 16px;
+
+  width: 320px;
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  background: transparent;
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close-icon:hover {
+  opacity: 1;
+}
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
