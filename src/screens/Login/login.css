@@ -308,3 +308,17 @@
 .input-field::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
+
+.link-button {
+  background: none;
+  border: none;
+  color: #8b5cf6;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}

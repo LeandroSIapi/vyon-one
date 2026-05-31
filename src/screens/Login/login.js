@@ -116,8 +116,11 @@ export default function Login() {
             <span>Lembrar-me</span>
           </label>
 
-          <a href="#">Esqueci minha senha</a>
-        </div>
+          
+          <button className="link-button">
+            Esqueci minha senha
+          </button>
+
 
         <button className="btn-primary" onClick={handleLogin} disabled={loading}>
           {loading ? "Entrando..." : "Entrar"}
@@ -136,9 +139,14 @@ export default function Login() {
 
         <p className="signup-text">
           Ainda não tem uma conta?{" "}
-          <a href="#" onClick={() => setShowRegister(true)}>
-            Cadastrar-se
-          </a>
+          
+        <button
+          className="link-button"
+          onClick={() => setShowRegister(true)}
+        >
+          Cadastrar-se
+        </button>
+
         </p>
       </div>
 
