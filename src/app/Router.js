@@ -48,6 +48,13 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/cartoes" element={<CartoesScreen />} />
+        <Route path="/compras" element={<ComprasScreen />} />
+        <Route path="/contas" element={<ContasScreen />} />
+        <Route path="/estoque" element={<EstoqueScreen />} />
+        <Route path="/investimentos" element={<InvestimentosScreen />} />
+        <Route path="/pessoas" element={<PessoasScreen />} />
+        <Route path="/planos" element={<PlanosScreen />} />
+        <Route path="/transacoes" element={<TransacoesScreen />} />
       </Routes>
     </Layout>
   </BrowserRouter>
