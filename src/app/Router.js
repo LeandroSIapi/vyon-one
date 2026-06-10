@@ -17,12 +17,12 @@ import TransacoesScreen from "../screens/Transacoes/TransacoesScreen";
 
 export default function Router() {
   const [session, setSession] = useState(null);
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
       setSession(data.session);
-      setLoading(false);
+      
     });
 
     const { data: listener } = supabase.auth.onAuthStateChange(
@@ -36,7 +36,6 @@ export default function Router() {
     };
   }, []);
 
-  if (loading) return null;
 
   if (!session) {
     return <LoginScreen />;

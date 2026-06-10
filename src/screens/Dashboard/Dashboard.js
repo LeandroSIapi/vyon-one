@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 import { supabase } from "../../services/supabaseClient";
-import CartoesScreen from "../Cartoes/CartoesScreen";
+
 
 export default function Dashboard() {
   const handleLogout = async () => {
