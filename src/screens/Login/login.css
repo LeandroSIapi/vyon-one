@@ -1,9 +1,16 @@
 .login-container {
   min-height: 100vh;
-  background-size: cover;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0b0b1a;
+
 }
 
 .login-content {
@@ -18,6 +25,7 @@
   color: #fff;
   width: 320px;          /* melhor proporção */
   max-width: 90%;
+  margin: 0 auto;
 }
 
 .login-content a {
