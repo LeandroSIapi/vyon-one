@@ -1,8 +1,23 @@
 .layout {
   display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0b0b1a; /* Fundo principal do sistema */
+  overflow: hidden; /* Impede rolagem na tela inteira */
 }
 
 .content {
   flex: 1;
-  padding: 20px;
+  padding: 24px;
+  overflow-y: auto; /* Apenas o conteúdo rola, a sidebar fica fixa */
+}
+
+/* Espaço extra no final da tela do celular para a barra inferior não tampar conteúdo */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .content {
+    padding-bottom: 90px; 
+  }
 }

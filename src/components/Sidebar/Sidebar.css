@@ -1,27 +1,104 @@
 .sidebar {
   width: 240px;
   height: 100vh;
-
-  background: #111827;
-
+  background: rgba(17, 24, 39, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  
   display: flex;
   flex-direction: column;
-
-  padding: 20px;
-
-  gap: 15px;
+  padding: 24px 16px;
+  box-sizing: border-box;
 }
 
-.sidebar h2 {
-  color: white;
-  margin-bottom: 20px;
+.sidebar-header h2 {
+  margin: 0 0 32px 12px;
+  font-size: 26px;
+  /* Cria o texto com efeito gradiente igual aos botões primários */
+  background: linear-gradient(135deg, #2563eb, #6c19fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .sidebar a {
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
+/* Efeito ao passar o mouse */
 .sidebar a:hover {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+/* O NavLink aplica essa classe sozinha quando você está na página */
+.sidebar a.active {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(108, 25, 252, 0.15));
+  color: white;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+/* =========================================
+   MODO CELULAR (Menu vira Barra Inferior) 
+   ========================================= */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    padding: 0;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 11, 26, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Fica acima de tudo */
+  }
+
+  .sidebar-header {
+    display: none; /* Esconde a logo no celular */
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto; /* Permite rolar pro lado se não couber tudo */
+    padding: 0 16px;
+    gap: 16px;
+  }
+  
+  /* Esconde a barra de rolagem horizontal no celular, mas mantém o funcionamento */
+  .sidebar-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebar a {
+    flex-direction: column; /* Ícone em cima, texto em baixo */
+    gap: 4px;
+    padding: 8px 4px;
+    font-size: 10px;
+    white-space: nowrap; /* Impede o texto de quebrar linha */
+  }
+
+  .sidebar a.active {
+    border: none;
+    background: transparent;
+    color: #a78bfa; /* Ícone acende quando ativo */
+  }
 }

@@ -1,1 +1,29 @@
-**MVP*** Login* Contas* Cartões* Transações* Dashboard simples**Versão 1.0*** Pessoas* Contas mensais* Relatório PDF mensal* Dashboard completo**Versão 2.0*** Investimentos* Metas e planos* Estoque residencial* Lista de compras inteligente**Versão 3.0*** IA Vyon* Relatórios inteligentes* Planejamento financeiro* Projeções futuras
+**MVP**
+
+* Login
+* Contas
+* Cartões
+* Transações
+* Dashboard simples
+
+**Versão 1.0**
+
+* Pessoas
+* Contas mensais
+* Relatório PDF mensal
+* Dashboard completo
+
+**Versão 2.0**
+
+* Investimentos
+* Metas e planos
+* Estoque residencial
+* Lista de compras inteligente
+
+**Versão 3.0**
+
+* IA Vyon
+* Relatórios inteligentes
+* Planejamento financeiro
+* Projeções futuras
+

@@ -1,0 +1,5 @@
+- Relatório PDF mensal
+- IA financeira
+- Comparador de preços
+- Open Finance
+- Reconhecimento de nota fiscal
